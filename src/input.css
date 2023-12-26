@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  @apply bg-white dark:bg-slate-800 font-main;
+}
+
+.transition {
+  @apply transition duration-300;
+}
+
+/* header */
+.header {
+  @apply mt-5 mb-10 px-2 border-b flex items-center justify-between gap-8;
+}
+
+.logo {
+  @apply block font-bold uppercase text-purple-800 py-5 hover:text-tomato;
+}
+
+.nav-list {
+  @apply flex items-center gap-6 font-semibold text-gray-800;
+}
+
+.nav-link {
+  @apply border-transparent border-b-2 hover:border-purple-900 hover:text-purple-900 block py-2 dark:text-white/70 dark:hover:border-white dark:hover:text-white;
+}
+
+/* hero */
+.hero {
+  @apply px-2 flex gap-2 flex-col md:flex-row mb-10;
+}
+
+.hero-article {
+  @apply h-64 md:h-96 relative overflow-hidden rounded-md md:w-1/2;
+}
+
+.hero-article-link {
+  @apply absolute left-0 top-0 right-0 bottom-0;
+}
+
+.hero-article-image {
+  @apply absolute left-0 top-0 w-full h-full object-cover -z-10 group-hover:scale-125;
+}
+
+.hero-article-title {
+  @apply absolute p-4 bottom-0 left-0 z-10 text-2xl font-semibold text-gray-100 leading-tight;
+}
+
+.hero-article-overlay {
+  @apply absolute left-0 top-0 w-full h-full bg-gradient-to-tr from-gray-800 via-transparent to-purple-800 group-hover:bg-purple-700/40;
+}
+
+/* articles */
+.articles-wrapper {
+  @apply flex flex-col md:flex-row mb-10;
+}
+
+.articles {
+  @apply flex-col md:flex-row flex gap-10;
+}
+
+.articles-title {
+  @apply text-3xl font-bold text-gray-500 mb-10 dark:text-white;
+}
+
+.articles-item {
+  @apply mb-8;
+}
+
+.articles-item-title {
+  @apply text-2xl -mt-2 font-semibold text-gray-700;
+}
+
+.articles-item-text {
+  @apply text-gray-400;
+}
+
+.articles-item-image {
+  @apply object-cover order-first w-full md:w-64 h-44 opacity-75;
+}
+
+.articles-link {
+  @apply flex flex-col md:flex-row gap-4;
+}
+
+/* pagination */
+.pagination {
+  @apply p-2 mt-8;
+}
+
+.pagination-list {
+  @apply flex items-center justify-center;
+}
+
+.pagination-link {
+  @apply block py-1 px-3 border border-gray-300 hover:bg-gray-200 hover:text-purple-800 hover:border-purple-900 text-gray-500;
+}
+
+.pagination-link-active {
+  @apply  border-purple-800 text-purple-700 bg-purple-200;
+}
+
+/* footer */
+.footer {
+  @apply px-2 border-t mt-10 py-10 flex items-center justify-around;
+}
+
+.footer-block {
+  @apply flex flex-col gap-2;
+}
+
+.footer-title {
+  @apply font-semibold text-gray-700 mb-4;
+}
+
+.footer-link {
+  @apply border-transparent border-b-2 hover:border-purple-900 hover:text-purple-900 block py-1 text-gray-500;
+}

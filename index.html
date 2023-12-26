@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind project</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="body">
+
+  <div class="px-4 mx-auto max-w-screen-xl">
+    <!-- start HEADER -->
+    <header class="header">
+      <a class="logo transition" href="">Site Logo</a>
+      <nav class="hidden md:block">
+        <ul class="nav-list">
+          <li><a class="nav-link transition" href="">Home</a></li>
+          <li><a class="nav-link transition" href="">About</a></li>
+          <li><a class="nav-link transition" href="">Contacts</a></li>
+          <li><a class="nav-link transition" href="">News</a></li>
+        </ul>
+      </nav>
+      <button class="md:hidden transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" stroke-width="1.5" stroke="currentColor"
+          class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+      </button>
+    </header>
+    <!-- end HEADER -->
+
+    <!-- start MAIN -->
+    <main>
+      <!-- start HERO -->
+      <section class="hero">
+        <!-- article 1 -->
+        <article class="hero-article">
+          <a class="group hero-article-link transition" href="">
+            <h2 class="hero-article-title">Dolor sit amet consectetur.</h2>
+            <p class="text-transparent">
+              Dolor sit amet consectetur adipisicing elit. Voluptas modi rem ea ducimus. Blanditiis, accusamus.
+            </p>
+            <img class="hero-article-image transition" src="public/images/article-1.png" alt="image">
+            <div class="hero-article-overlay"></div>
+          </a>
+        </article>
+        <!-- article 2 -->
+        <article class="hero-article">
+          <a class="group hero-article-link transition" href="">
+            <h2 class="hero-article-title">Sit amet consectetur.</h2>
+            <p class="text-transparent">
+              Ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi rem ea ducimus. Blanditiis, accusamus.
+            </p>
+            <img class="hero-article-image transition" src="public/images/article-2.png" alt="image">
+            <div class="hero-article-overlay"></div>
+          </a>
+        </article>
+        <!-- end articles -->
+      </section>
+      <!-- end HERO -->
+
+      <!-- start main block -->
+      <div class="articles-wrapper">
+        <div class="articles">
+          <!-- start ARTICLES -->
+          <section class="px-5">
+            <h1 class="articles-title">Adipisicing elit rem, ipsum dolor.</h1>
+            <!-- article 1 -->
+            <article class="articles-item">
+              <a class="articles-link transition" href="">
+                <div>
+                  <h2 class="articles-item-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                  <p class="articles-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi rem ea ducimus. Blanditiis,
+                    accusamus.
+                  </p>
+                </div>
+                <img class="articles-item-image" src="public/images/article-3.webp" alt="image">
+              </a>
+            </article>
+            <!-- article 2 -->
+            <article class="articles-item">
+              <a class="articles-link transition" href="">
+                <div>
+                  <h2 class="articles-item-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                  <p class="articles-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi rem ea ducimus. Blanditiis,
+                    accusamus.
+                  </p>
+                </div>
+                <img class="articles-item-image" src="public/images/article-4.png" alt="image">
+              </a>
+            </article>
+            <!-- article 3 -->
+            <article class="articles-item">
+              <a class="articles-link transition" href="">
+                <div>
+                  <h2 class="articles-item-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                  <p class="articles-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi rem ea ducimus. Blanditiis,
+                    accusamus.
+                  </p>
+                </div>
+                <img class="articles-item-image" src="public/images/article-5.png" alt="image">
+              </a>
+            </article>
+            <!-- article 4 -->
+            <article class="articles-item">
+              <a class="articles-link transition" href="">
+                <div>
+                  <h2 class="articles-item-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                  <p class="articles-item-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi rem ea ducimus. Blanditiis,
+                    accusamus.
+                  </p>
+                </div>
+                <img class="articles-item-image" src="public/images/article-6.png" alt="image">
+              </a>
+            </article>
+            <!-- end articles -->
+          </section>
+          <!-- end ARTICLES -->
+        </div>
+
+      </div>
+      <!-- end main block -->
+
+      <!-- start pagination -->
+      <div class="pagination">
+        <ul class="pagination-list">
+          <li><a class="pagination-link transition rounded-l-lg" href="">First</a></li>
+          <li><a class="pagination-link transition" href="">Prev</a></li>
+          <li><a class="pagination-link transition pagination-link-active" href="">1</a></li>
+          <li><a class="pagination-link transition" href="">2</a></li>
+          <li><a class="pagination-link transition" href="">3</a></li>
+          <li><a class="pagination-link transition" href="">4</a></li>
+          <li><a class="pagination-link transition" href="">5</a></li>
+          <li><a class="pagination-link transition" href="">6</a></li>
+          <li><a class="pagination-link transition" href="">Next</a></li>
+          <li><a class="pagination-link transition rounded-r-lg" href="">Last</a></li>
+        </ul>
+      </div>
+      <!-- end pagination -->
+    </main>
+    <!-- end MAIN -->
+
+    <!-- start FOOTER -->
+    <footer class="footer">
+      <!-- block 1 -->
+      <div class="footer-block">
+        <h5 class="footer-title">About Us</h5>
+        <ul>
+          <li><a class="footer-link transition" href="">About our project</a></li>
+          <li><a class="footer-link transition" href="">Our team</a></li>
+          <li><a class="footer-link transition" href="">Contacts</a></li>
+        </ul>
+      </div>
+      <!-- block 2 -->
+      <div class="footer-block">
+        <h5 class="footer-title">We are on socials</h5>
+        <ul>
+          <li><a class="footer-link transition" href="">Facebook</a></li>
+          <li><a class="footer-link transition" href="">Twitter</a></li>
+          <li><a class="footer-link transition" href="">Instagram</a></li>
+        </ul>
+      </div>
+      <!-- end blocks -->
+    </footer>
+    <!-- end FOOTER -->
+  </div>
+
+</body>
+
+</html>
